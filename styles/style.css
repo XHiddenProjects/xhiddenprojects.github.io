@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ5cmxjZXE0eG90NnA5eDludzhpc2U0cDk5ZWp3am43M281YW80eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AtHoQ9XWbpwLRxs0t/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.infoPage{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.page{
+    display: flex;
+    height: calc(100% - 8%);
+    width: 100%;
+    position: absolute;
+    top:26%;
+    right: -10%;
+    transform: translate(10%,-20%);
+    animation: phaseIn 2s linear forwards;
+}
+.page.inback{
+    z-index: -1!important;
+}
+.page.noshow.loaded{
+    right: 110%!important;
+}
+.page.noshow{
+    animation: phaseOut 2s linear forwards;
+}
+iframe.resume-embed{
+    zoom: 2;
+    -ms-zoom: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.card{
+    height: 32rem;
+    width: 45rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.card .card-body{
+    height: 100%;
+}
+.card .card-body ul.list-group,
+.card .card-body div.awards-list{
+    height: 85%;
+    overflow: auto;
+}
+.portfolio-card .card-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #878787;
+    font-size: 8vh;
+}
+.portfolio-card .card-title .lastname{
+    color:#e5ae05;
+}
+.portfolio-card address{
+    font-style: italic;
+    font-size: 3vh;
+}
+.portfolio-card address .maillink{
+    color:#e5ae05;
+}
+.portfolio-card .profilePic{
+    width: 128px;
+    height: 128px;
+}
+.portfolio-card .media-links a{
+    font-size: 7vh;
+}
+.portfolio-card .noimg-err{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 128px;
+    height: 128px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+    cursor: auto;
+}
+.portfolio-card .about-desc,
+.workExperience .work-description{
+    font-family: monospace;
+}
+.workExperience .work-date,
+.education .education-date{
+    color: #ba850c;
+}
+.subheading{
+    font-size:2.5vh;
+    font-weight: 500;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.workExperience .work-description ul{
+    height: 24vh;
+    list-style: disc;
+}
+.awards .awards-item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.awards .awards-item i{
+    cursor: help;
+}
+.awards .awards-item:not(:last-child){
+    border-bottom: 2px solid #000;
+}
+.awards .awards-item .awards-exp{
+    font-size: 2vh;
+    color: #918a8a;
+    font-weight: 500;
+    font-style: italic;
+}
+@keyframes phaseIn {
+    from{
+        right:-50%;
+        display: block;
+        z-index: 1;
+    }
+    to{
+        right:10%;
+        z-index: 0;
+    }
+}
+@keyframes phaseOut {
+    from{
+        right:20%;
+        z-index: -1;
+    }
+    to{
+        right:110%;
+        z-index: 0;
+        display: none;
+    }
+}

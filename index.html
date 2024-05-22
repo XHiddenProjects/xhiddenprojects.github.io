@@ -1,10 +1,322 @@
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
-      <title>XHiddenProjects Website</title>
-      <link rel="stylesheet" href="./styles/main.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gavin Zeager - Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/mobile.css"/>
     </head>
     <body>
-      
+       <nav class="navbar navbar-expand-lg bg-dark-subtle opacity-75" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleNavbar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="page-connector nav-link active" aria-current="page" href="#about">About</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#resume">Resume</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#work-experience">Work Experience</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#education">Education</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#skills">Skills</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#awards">Awards</a>
+                        <a class="page-connector nav-link" aria-current="page" href="#intrests">Intrests</a>
+                    </ul>
+                    
+                  </div>
+            </div>
+        </nav>
+        <div class="page" page-target="about" page-main="true">
+                <div class="card portfolio-card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center text-uppercase">Gavin <span class="lastname">Zeager</span></h1>
+                        <div class="position-relative">
+                            <img src="" alt="" class="profilePic img-fluid img-thumbnail rounded-circle mx-auto d-block"/>
+                            <div class="noimg-err justify-content-center align-items-center">
+                                No Image Found
+                            </div>
+                        </div>
+                        <address class="text-center">
+                            Medina, OH · (330)636-1838 · <a class="maillink" href="mailto:gzeager@zoominternet.net">gzeager@zoominternet.net</a>
+                        </address>
+                        <div class="d-flex justify-content-center align-items-center media-links">
+                            <a class="link-secondary mx-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GitHub" href="https://github.com/xhiddenprojects"><i class="fa-brands fa-github"></i></a>
+                            <a class="link-secondary mx-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Indeed" href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage"><i class="fa-solid fa-circle-info"></i></a>
+                            <a class="link-secondary mx-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Handshake" href="https://app.joinhandshake.com/stu/users/50410904"><i class="fa-solid fa-square-h"></i></a>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center about-desc">
+                            <p class="text-secondary fw-bold mb-0 text-center">Hello, my name is Gavin Zeager.</p>
+                            <p><span class="ms-4">I am a experienced web developer and have done this for more than 4 years.</span> I took cybersecurity class at a 
+                                vocational school and love playing around with Windows applications. For example: Active Directory(AD), creating users, permissions.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="page noshow" page-target="resume">
+                <iframe class="resume-embed" src="https://1drv.ms/b/c/72089c5afc8dd58f/IQMQMpCJfvidRrJ9IazBqUKkAWVTWPuL1uJfB-2_0LpPl8I#view=100" width="98" height="120" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="page noshow" page-target="work-experience">
+            <div class="card workExperience overflow-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Work Experience</h1>
+                    <hr class="border border-3 border-dark rounded"/>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="work-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Web Developer</h3>
+                                    <p class="text-secondary subheading text-uppercase">Self Taught</p>
+                                </div>
+                                <span class="work-date">~2019 - Present</span>
+                            </div>
+                            <div class="work-description text-secondary">
+                                <ul class="overflow-auto">
+                                    I built a lot of web programming and started learning at the around age of 14 starting of with HTML, CSS, and JS. and started
+                                    working with PHP and other backend languages.
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="work-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Maintenance</h3>
+                                    <p class="text-secondary subheading text-uppercase">McDonald's - Medina, OH</p>
+                                </div>
+                                <span class="work-date">May 2024 - Present</span>
+                            </div>
+                            <div class="work-description text-secondary">
+                                <ul class="overflow-auto">
+                                    <p>I will have a routine of tasks to work with. Examples are replacing the water in the towel buckets, 
+                                    changingthe fryers` oil, helping with truckloads on a certain day, taking out the trash, and whatever the managerswant from me.</p>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="work-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Grill Cook/Line Cook</h3>
+                                    <p class="text-secondary subheading text-uppercase">McDonald's - Medina, OH</p>
+                                </div>
+                                <span class="work-date">November 2020 - Present</span>
+                            </div>
+                            <div class="work-description text-secondary">
+                                <ul class="overflow-auto">
+                                    <li>Followed recipes and kitchen procedures for consistent food quality, presentation, and standards.</li>
+                                    <li>Developed a deep understanding of menu items and ingredients.</li>
+                                    <li>Maintained clean, organized grill stations for hygienic orderly food preparation.</li>
+                                    <li>Cleaned and maintained the kitchen equipment regularly.</li>
+                                    <li>Stored and handled goods correctly to maintain freshness and condition.</li>
+                                    <li>Grilled, cooked, and fried foods such as french fries, eggs, and pancakes.</li>
+                                    <li>Restock stations and supplies during slower periods between rushes.</li>
+                                    <li>Checked freshness and quality of ingredients.</li>
+                                    <li>Worked closely with other kitchen staff to facilitate thetimely completion of orders.</li>
+                                    <li>Modified recipes according to dietary requirements.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="work-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Teacher's Assistant</h3>
+                                    <p class="text-secondary subheading text-uppercase">SRP(Summer Reinforcement program) - Medina, OH</p>
+                                </div>
+                                <span class="work-date">June 2019 - May 2024</span>
+                            </div>
+                            <div class="work-description text-secondary">
+                                <ul class="overflow-auto">
+                                    <li>Tutored struggling students individually and in small groups to reinforce learning concepts.</li>
+                                    <li>Oversaw students in the classroom and common areas to monitor, enforce rules, and support thelead teacher.</li>
+                                    <li>Help with grading assignments and tests, and providing constructive feedback to students based onthe results.</li>
+                                    <li>Kept classroom clean and organized for classroom efficiency.</li>
+                                    <li>Assisted lead teacher with lesson plan creation and materials development.</li>
+                                    <li>Collaborate with teachers for lesson preparation by setting up equipment and materials.</li>
+                                    <li>Presented a wide range of information to students using hands-on instructional techniques for effective comprehension.</li>
+                                    <li>Helped teachers recognize learning issues evidenced in one-to-one support instructions.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page noshow" page-target="education">
+            <div class="card education overflow-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Education</h1>
+                    <hr class="border border-3 border-dark rounded"/>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="education-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Medina County Career Center</h3>
+                                    <p class="text-secondary subheading text-uppercase">One Year in Cybersecurity</p>
+                                </div>
+                                <span class="education-date">January 2022 - May 2023</span>
+                            </div>
+                            <div class="education-description text-secondary">
+                                <p class="education-title mb-0">Cybersecurity and Digital Forensics</p>
+                                <p class="education-gpa">GPA: (Honor Roll: 4 yrs)</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="education-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Medina High School</h3>
+                                    <p class="text-secondary subheading text-uppercase">High school diploma</p>
+                                </div>
+                                <span class="education-date">September 2019 - May 2023</span>
+                            </div>
+                            <div class="education-description text-secondary">
+                                <p class="education-title mb-0"></p>
+                                <p class="education-gpa">GPA: N/A</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-row align-items-start justify-content-between">
+                                <div class="education-title">
+                                    <h3 class="fw-bold mb-0 text-uppercase text-dark">Ashland University</h3>
+                                    <p class="text-secondary subheading text-uppercase">Bachelor of Science</p>
+                                </div>
+                                <span class="education-date">August 2023 - Present</span>
+                            </div>
+                            <div class="education-description text-secondary">
+                                <p class="education-title mb-0">First Year of College in Computer Science</p>
+                                <p class="education-gpa">GPA: 2.6</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page noshow" page-target="skills">
+            <div class="card education overflow-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Skills</h1>
+                    <hr class="border border-3 border-dark rounded"/>
+                    <div class="d-flex flex-column">
+                        <div class="skillset my-2 p-3">
+                            <h3 class="text-uppercase">Programming Languages</h3>
+                            <div class="d-inline-flex justify-content-between align-items-center flex-wrap w-100">
+                                <a href="https://www.w3.org/Style/CSS/Overview.en.html" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CSS3" alt="CSS" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://html.com/html5/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="HTML5" alt="HTML" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.javascript.com/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JavaScript" alt="JavaScript" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.mysql.com/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/mysql/mysql-original-wordmark.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="MySQL" alt="MySQL" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.php.net/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/php/php-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PHP" alt="PHP" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://getbootstrap.com/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/bootstrap/bootstrap-original-wordmark.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Boostrap" alt="Boostrap" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://jquery.com/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/jquery/jquery-original-wordmark.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JQuery" alt="JQuery" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://yaml.org/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/yaml/yaml-original.svg" title="YAML" alt="YAML" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.json.org/json-en.html" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/json/json-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JSON" alt="JSON" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.markdownguide.org/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/markdown/markdown-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Markdown" alt="Markdown" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.w3.org/XML/" rel="nofollow"><img src="https://github.com/devicons/devicon/raw/master/icons/xml/xml-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="XML" alt="XML" width="40" height="40" style="max-width: 100%;"></a>
+                                <a href="https://www.java.com/"><img src="https://github.com/devicons/devicon/raw/master/icons/java/java-original.svg" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Java" alt="Java" width="40" height="40"/></a>
+                            </div>
+                        </div>
+                        <div class="skillset my-2 p-3">
+                            <h3 class="text-uppercase">Workflow</h3>
+                            <div class="d-flex flex-column fs-5">
+                                <div class="workflow-item"><i class="fa-solid fa-check" style="color: #19d416;"></i> Mobile-First, Responsive Design</div>
+                                <div class="workflow-item"><i class="fa-solid fa-check" style="color: #19d416;"></i> Cross Browser Testing & Debugging</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page noshow" page-target="awards">
+            <div class="card awards overflow-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Awards & Certificates</h1>
+                    <hr class="border border-3 border-dark rounded"/>
+                    <div class="awards-list d-flex flex-column fs-4 overflow-auto">
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Award" class="fa-solid fa-award" style="color: #b8860b;"></i> Department of Mathematics & Computer Science: Ashland Pitch Competition Participent</div>
+                            <span class="awards-exp">(2023 - 2024)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> IT Specialist - Databases</div>
+                            <span class="awards-exp">(April 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> CareerSafe - Certificate of Completion (Cybersecurity)</div>
+                            <span class="awards-exp">(March 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> IT Specialist - JavaScript</div>
+                            <span class="awards-exp">(March 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Microsoft Office Specialist - Excel 2019 Expert</div>
+                            <span class="awards-exp">(March 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> IT Specialist - HTML5 Application Development</div>
+                            <span class="awards-exp">(February 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> IT Specialist - HTML and CSS</div>
+                            <span class="awards-exp">(February 2023 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Microsoft Office Specialist - Word 2019 Associate</div>
+                            <span class="awards-exp">(December 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Microsoft Office Specialist - Outlook 2019 Associate</div>
+                            <span class="awards-exp">(December 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Microsoft Office Specialist - Associate</div>
+                            <span class="awards-exp">(December 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> CareerSafe - Certificate of Completion(Interview skills)</div>
+                            <span class="awards-exp">(December 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> IC3 Digital Literacy Mater Certification</div>
+                            <span class="awards-exp">(November 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Microsoft Office Specialist - Excel 2019 Associate</div>
+                            <span class="awards-exp">(November 2022 - Present)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Optional Topics Certificate - American Heart Association</div>
+                            <span class="awards-exp">(October 2022 - October 2024)</span>
+                        </div>
+                        <div class="awards-item px-2 d-flex justify-content-between align-items-center">
+                            <div class="awards-title"><i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Certificate" class="fa-solid fa-file-certificate" style="color: #ffd770;"></i> Certificate of Membership - BPA</div>
+                            <span class="awards-exp">(2022 - 2023)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page noshow" page-target="intrests">
+            <div class="card intrests overflow-auto">
+                <div class="card-body h-100">
+                    <h1 class="card-title text-dark">Intrests</h1>
+                    <hr class="border border-3 border-dark rounded"/>
+                    <div class="d-flex flex-column">
+                        <div class="intrest-outdoors my-2">
+                            <h3>Outdoors</h3>
+                            <p><span class="ms-4">When I am outside, I usually swing on the play set or go climbing at an indoor rock climbing</span> or on a random 
+                                tree. I would also going for bike rides around my neighborhood or outside of that.</p>
+                        </div>
+                        <div class="intrest-indoors my-2">
+                            <h3>Indoors</h3>
+                            <p><span class="ms-4">When I am forced inside, I program random projects or relearn some stuff that I may liked</span> from my previous 
+                            years in school. For example, playing around with <em>Oracle VM VirtualBox</em> and installing Windows applications/Ubuntu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
     </body>
-  </html>
+</html>
