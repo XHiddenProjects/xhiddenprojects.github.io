@@ -73,11 +73,7 @@ iframe.resume-embed{
 .portfolio-card .card-title .lastname{
     color:#e5ae05;
 }
-.portfolio-card address{
-    font-style: italic;
-    font-size: 3vh;
-}
-.portfolio-card address .maillink{
+.portfolio-card .maillink{
     color:#e5ae05;
 }
 .portfolio-card .profilePic{

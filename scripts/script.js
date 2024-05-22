@@ -11,7 +11,7 @@ function ageCalc(birthdate){
           age = Math.abs(setAge.getUTCFullYear() - 1970);
     return age;
 }
-
+document.querySelector('.setAge').innerText = ageCalc('08/29/2004');
 //Sets the loaded target and prevents elements from displaying on load
 setTimeout(()=>{
     window.location.hash = document.querySelector('[page-main]').getAttribute('page-target').toLocaleLowerCase();
