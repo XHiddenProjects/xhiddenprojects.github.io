@@ -14,7 +14,7 @@ function ageCalc(birthdate){
 document.querySelector('.setAge').innerText = ageCalc('08/29/2004');
 //Sets the loaded target and prevents elements from displaying on load
 setTimeout(()=>{
-    window.location.hash = document.querySelector('[page-main]').getAttribute('page-target').toLocaleLowerCase();
+    (!window.location.hash ? window.location.hash = document.querySelector('[page-main]').getAttribute('page-target').toLocaleLowerCase() : null);
     document.querySelectorAll('.page').forEach((e)=>{
         if(e.getAttribute('page-target').toLocaleLowerCase()===window.location.hash.replace('#','')){
             const pageConnector = document.querySelector('.page-connector[href="#'+e.getAttribute('page-target')+'"]');
