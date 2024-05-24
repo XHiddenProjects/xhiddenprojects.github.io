@@ -130,6 +130,32 @@ iframe.resume-embed{
     font-weight: 500;
     font-style: italic;
 }
+.themeswitch{
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 32px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeswitch[theme-set="light"]{
+    background-color: #fff;
+    color:#000;
+}
+.themeswitch[theme-set="dark"]{
+    background-color: #000;
+    color:#fff;
+}
+html[data-bs-theme="dark"] .text-dark{
+    color: #cdcdcd!important;
+}
 @keyframes phaseIn {
     from{
         right:-50%;

@@ -70,3 +70,15 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 document.querySelector('.profilePic').addEventListener('error',()=>{
     document.querySelector('.noimg-err').style.display = 'flex';
 });
+//theme
+document.querySelector('.themeswitch').addEventListener('click',function(){
+    if(this.getAttribute('theme-set').toLocaleLowerCase()==='light'){
+        this.setAttribute('theme-set','dark');
+        this.querySelector('i').className = 'fa-solid fa-moon';
+        document.querySelector('html').setAttribute('data-bs-theme','dark');
+    }else{
+        this.setAttribute('theme-set','light');
+        this.querySelector('i').className = 'fa-solid fa-sun';
+        document.querySelector('html').setAttribute('data-bs-theme','light');
+    }
+});
