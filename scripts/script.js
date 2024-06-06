@@ -47,18 +47,23 @@ window.addEventListener('hashchange',() => {
 },false);
 //Phase to back with navbar toggle(mobile only)
 const navCollapse = document.getElementById('toggleNavbar');
+let obj=null;
 navCollapse.addEventListener('show.bs.collapse', (event) => {
   document.querySelectorAll('.page').forEach((e)=>{
+      if(!e.classList.contains('noshow')) obj = e;
     e.classList.add('inback');
+    e.classList.add('noshow');
   });
 });
 navCollapse.addEventListener('hide.bs.collapse', (event) => {
     document.querySelectorAll('.page').forEach((e)=>{
+        if(e===obj) e.classList.remove('noshow');
       e.classList.remove('inback');
     });
 });
 navCollapse.addEventListener('hidden.bs.collapse', (event) => {
     document.querySelectorAll('.page').forEach((e)=>{
+        if(e===obj) e.classList.remove('noshow');
       e.classList.remove('inback');
     });
 });
