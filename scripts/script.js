@@ -46,18 +46,19 @@ window.addEventListener('hashchange',() => {
     });
 },false);
 //Phase to back with navbar toggle(mobile only)
-const navCollapse = document.getElementById('toggleNavbar')
-navCollapse.addEventListener('show.bs.collapse', event => {
+const navCollapse = document.getElementById('toggleNavbar');
+navCollapse.addEventListener('show.bs.collapse', (event) => {
+    alert('test');
   document.querySelectorAll('.page').forEach((e)=>{
     e.classList.add('inback');
   });
 });
-navCollapse.addEventListener('hide.bs.collapse', event => {
+navCollapse.addEventListener('hide.bs.collapse', (event) => {
     document.querySelectorAll('.page').forEach((e)=>{
       e.classList.remove('inback');
     });
 });
-navCollapse.addEventListener('hidden.bs.collapse', event => {
+navCollapse.addEventListener('hidden.bs.collapse', (event) => {
     document.querySelectorAll('.page').forEach((e)=>{
       e.classList.remove('inback');
     });
