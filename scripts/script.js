@@ -1,5 +1,4 @@
-const navCollapse = document.getElementById('toggleNavbar'),
-    swipeList = [];
+const navCollapse = document.getElementById('toggleNavbar');
 /**
  * Calculates your age
  * @param {Date} birthdate The year that you were born
@@ -34,12 +33,6 @@ setTimeout(()=>{
         });
    },4000); 
 },0);
-
-window.addEventListener('load',()=>{
-    document.querySelectorAll('.page-connector').forEach((e)=>{
-        swipeList.push(e.getAttribute('href').replace('#',''));
-    });
-});
 
 //Updates on hash change to display page
 window.addEventListener('hashchange',() => {
