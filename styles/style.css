@@ -31,7 +31,7 @@ body{
     animation: phaseIn 2s linear forwards;
 }
 .page.inback{
-    z-index: -1!important;
+    z-index: -3!important;
 }
 .page.noshow.loaded{
     right: 110%!important;
