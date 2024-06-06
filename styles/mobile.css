@@ -3,6 +3,9 @@
         width: 100vw;
         overflow: auto;
     }
+    .page.inback{
+        z-index: -1!important;
+    }
     iframe.resume-embed{
         height: 98%;
         margin-top: 5px;
@@ -12,6 +15,9 @@
     .card{
         width: 100vw;
         overflow: auto;
+    }
+    .page.inback{
+        z-index: -1!important;
     }
     .card, 
     iframe.resume-embed{
@@ -23,6 +29,9 @@
     .card{
         width: 100%;
         overflow: auto;
+    }
+    .page.inback{
+        z-index: -1!important;
     }
     .card,
     iframe.resume-embed{
