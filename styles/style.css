@@ -39,6 +39,9 @@ body{
 .page.noshow{
     animation: phaseOut 2s linear forwards;
 }
+.page.hidden{
+    display:none;
+}
 iframe.resume-embed{
     zoom: 2;
     -ms-zoom: 2;
