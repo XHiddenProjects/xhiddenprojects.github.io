@@ -2,7 +2,6 @@
     .card{
         width: 100vw;
         overflow: auto;
-        z-index:-1;
     }
     iframe.resume-embed{
         height: 98%;
@@ -13,7 +12,6 @@
     .card{
         width: 100vw;
         overflow: auto;
-        z-index:-1;
     }
     .card, 
     iframe.resume-embed{
@@ -25,7 +23,6 @@
     .card{
         width: 100%;
         overflow: auto;
-        z-index:-1;
     }
     .card,
     iframe.resume-embed{
