@@ -1,4 +1,5 @@
-const navCollapse = document.getElementById('toggleNavbar');
+const navCollapse = document.getElementById('toggleNavbar'),
+    swipeList = [];
 /**
  * Calculates your age
  * @param {Date} birthdate The year that you were born
@@ -33,6 +34,48 @@ setTimeout(()=>{
         });
    },4000); 
 },0);
+
+window.addEventListener('load',()=>{
+    document.querySelectorAll('.page-connector').forEach((e)=>{
+        swipeList.push(e.getAttribute('href').replace('#',''));
+    });
+});
+
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX){
+    //swipe left
+    const getIndex = window.location.hash.replace('#','');
+    if(swipeList.indexOf(getIndex)+1>(swipeList.length-1)){
+        window.location.hash = swipeList[0];
+    }else{
+        console.log(swipeList.indexOf(getIndex)+1);
+        const newIndex = (swipeList.indexOf(getIndex)+1);
+        window.location.hash = swipeList[newIndex];
+    }
+  }
+  if (touchendX > touchstartX){
+    //swipe right
+    const getIndex = window.location.hash.replace('#','');
+    if(swipeList.indexOf(getIndex)-1<0){
+        window.location.hash = swipeList[swipeList.length-1];
+    }else{
+        const newIndex = (swipeList.indexOf(getIndex)-1);
+        window.location.hash = swipeList[newIndex];
+    }
+  }
+}
+document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX
+  })
+  
+  document.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    checkDirection()
+  })
+
 //Updates on hash change to display page
 window.addEventListener('hashchange',() => {
     navCollapse.classList.remove('show');
