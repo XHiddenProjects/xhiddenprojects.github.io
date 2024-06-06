@@ -1,3 +1,4 @@
+const navCollapse = document.getElementById('toggleNavbar');
 /**
  * Calculates your age
  * @param {Date} birthdate The year that you were born
@@ -34,6 +35,10 @@ setTimeout(()=>{
 },0);
 //Updates on hash change to display page
 window.addEventListener('hashchange',() => {
+    navCollapse.classList.remove('show');
+    document.querySelectorAll('.page.hidden').forEach((e)=>{
+        e.classList.remove('hidden');
+    });
     document.querySelectorAll('.page').forEach((e)=>{
         if(e.getAttribute('page-target').toLocaleLowerCase()===window.location.hash.replace('#','')){
             const pageConnector = document.querySelector('.page-connector[href="#'+e.getAttribute('page-target')+'"]');
@@ -46,7 +51,7 @@ window.addEventListener('hashchange',() => {
     });
 },false);
 //Phase to back with navbar toggle(mobile only)
-const navCollapse = document.getElementById('toggleNavbar');
+
 let obj=null;
 navCollapse.addEventListener('show.bs.collapse', (event) => {
   document.querySelectorAll('.page').forEach((e)=>{
