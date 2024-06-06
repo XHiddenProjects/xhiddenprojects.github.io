@@ -48,7 +48,6 @@ window.addEventListener('hashchange',() => {
 //Phase to back with navbar toggle(mobile only)
 const navCollapse = document.getElementById('toggleNavbar');
 navCollapse.addEventListener('show.bs.collapse', (event) => {
-    alert('test');
   document.querySelectorAll('.page').forEach((e)=>{
     e.classList.add('inback');
   });
