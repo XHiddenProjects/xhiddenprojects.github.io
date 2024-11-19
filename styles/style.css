@@ -20,6 +20,13 @@ body{
     left:50%;
     transform: translate(-50%,-50%);
 }
+a:disabled,
+a[disabled]{
+    pointer-events: none;
+}
+.card{
+    box-shadow: 0 0 15px 8px rgba(108, 108, 108, 0.85);
+}
 .page{
     display: flex;
     height: calc(100% - 8%);
@@ -140,11 +147,22 @@ iframe.resume-embed{
     font-weight: 500;
     font-style: italic;
 }
+[class$='-item'],
+.awards-item{
+    transition: 0.3s!important;
+}
 [class$='-item']:hover,
 .awards-item:hover{
     background-color: rgba(11,37,79,0.8);
-    color: #c1c1c1;
-    transition: 0.3s;
+    color: #c1c1c1!important;
+}
+[class$='-item']:hover h3,
+.awards-item:hover h3{
+    color: #c1c1c1!important;
+}
+[class$='-item']:hover p,
+.awards-item:hover p{
+    color: rgb(159, 159, 159)!important;
 }
 .themeswitch{
     position: absolute;
